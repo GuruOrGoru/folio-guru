@@ -2,15 +2,15 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/06ea29e4-71c6-4abb-a693-421da8da93ea
+**URL**: https://guruorgoru.netlify.app
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
+**Use github**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/06ea29e4-71c6-4abb-a693-421da8da93ea) and start prompting.
+Simply visit the [Github Project](https://guruorgoru/guruorgoru-dot-dev) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -62,9 +62,9 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/06ea29e4-71c6-4abb-a693-421da8da93ea) and click on Share -> Publish.
+Simply fork this repo and use as your choice.
 
-## Can I connect a custom domain to my Lovable project?
+## Can I connect a custom domain to my project?
 
 Yes, you can!
 
