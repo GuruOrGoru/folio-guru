@@ -66,11 +66,11 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16 fade-up">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Let's <span className="text-terminal">Connect</span>
+            Establish <span className="text-terminal">Connection</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Whether you want to collaborate on a project, discuss Go programming, 
-            or just have a chat about technology - I'd love to hear from you!
+            Whether you want to collaborate on distributed systems, discuss Go architecture patterns, 
+            or explore technical opportunities - I'd welcome the opportunity to connect.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
                   <Send className="w-6 h-6 text-terminal" />
-                  Send a Message
+                  Initiate Communication
                 </h3>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -116,7 +116,7 @@ const Contact = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell me about your project, ideas, or just say hi!"
+                      placeholder="Tell me about your technical requirements, architecture ideas, or just establish initial contact!"
                       className="border-terminal/30 focus:border-terminal min-h-[120px]"
                       required
                     />
@@ -127,14 +127,14 @@ const Contact = () => {
                     className="w-full bg-terminal hover:bg-terminal-dim text-primary-foreground font-mono"
                   >
                     <Send className="w-4 h-4 mr-2" />
-                    Send Message
+                    Transmit Message
                   </Button>
                 </form>
 
                 {/* Terminal Style Note */}
                 <div className="mt-6 p-4 bg-terminal/5 border border-terminal/20 rounded-lg">
                   <div className="font-mono text-sm text-terminal">
-                    <span className="text-terminal">$</span> echo "Response time: Usually within 24 hours"
+                    <span className="text-terminal">$</span> echo "Response latency: Usually within 24 hours"
                   </div>
                 </div>
               </CardContent>
@@ -148,7 +148,7 @@ const Contact = () => {
               return (
                 <Card 
                   key={index} 
-                  className={`border-terminal/20 hover:border-terminal/50 transition-all duration-300 ${
+                  className={`border-terminal/20 hover:border-terminal/50 transition-all duration-300 transform hover:scale-102 ${
                     info.link ? 'cursor-pointer hover:shadow-lg hover:shadow-terminal/20' : ''
                   }`}
                   onClick={() => info.link && window.open(info.link, "_blank")}
@@ -174,10 +174,10 @@ const Contact = () => {
                 <div className="text-center">
                   <div className="text-2xl mb-3">💭</div>
                   <div className="font-mono text-terminal mb-2">
-                    "Code is poetry, Go is my language of choice"
+                    "Code is architecture, Go is my implementation language"
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    - GuruOrGoru, probably while debugging at 2 AM
+                    - GuruOrGoru, optimizing algorithms at 2 AM
                   </div>
                 </div>
               </CardContent>
@@ -186,7 +186,7 @@ const Contact = () => {
             {/* Current Setup */}
             <Card className="border-terminal/20">
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-4 text-terminal">Current Setup</h4>
+                <h4 className="font-semibold mb-4 text-terminal">System Configuration</h4>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">OS:</span>
@@ -201,8 +201,8 @@ const Contact = () => {
                     <span className="font-mono">Neovim</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Main Language:</span>
-                    <span className="font-mono text-terminal">Go</span>
+                    <span className="text-muted-foreground">Runtime:</span>
+                    <span className="font-mono">Go</span>
                   </div>
                 </div>
               </CardContent>
@@ -213,10 +213,10 @@ const Contact = () => {
         {/* Footer */}
         <div className="mt-16 text-center fade-up">
           <div className="inline-flex items-center gap-2 text-muted-foreground font-mono">
-            <span>Built with</span>
+            <span>Engineered with</span>
             <span className="text-terminal">❤️</span>
             <span>and</span>
-            <span className="text-terminal">Go spirit</span>
+            <span className="text-terminal">Go concurrency</span>
           </div>
         </div>
       </div>

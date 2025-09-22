@@ -91,9 +91,13 @@ export default {
           from: { opacity: "0", transform: "translateX(50px)" },
           to: { opacity: "1", transform: "translateX(0)" },
         },
-        "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(var(--terminal) / 0.3)" },
-          "50%": { boxShadow: "0 0 40px hsl(var(--terminal) / 0.6)" },
+        "smooth-bounce": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "rotate-subtle": {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
         },
         "typing": {
           from: { width: "0" },
@@ -109,7 +113,8 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.6s ease-out",
         "slide-in-right": "slide-in-right 0.6s ease-out",
-        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "smooth-bounce": "smooth-bounce 3s ease-in-out infinite",
+        "rotate-subtle": "rotate-subtle 20s linear infinite",
         "typing": "typing 3.5s steps(40, end)",
         "terminal-cursor": "terminal-cursor 1s infinite step-end",
       },

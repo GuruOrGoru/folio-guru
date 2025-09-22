@@ -4,77 +4,77 @@ import { Code2, Server, Cloud, Terminal as TerminalIcon, Wrench, Cpu } from "luc
 
 const Skills = () => {
   const skillCategories = [
-    {
-      icon: Code2,
-      title: "Programming Languages",
-      description: "My weapons of choice for building robust applications",
-      skills: [
-        { name: "Go", level: "Expert", isMain: true },
-        { name: "React", level: "Intermediate" },
-        { name: "Ruby on Rails", level: "Intermediate" },
-        { name: "C#/.NET", level: "Intermediate" },
-        { name: "C", level: "Foundation" },
-        { name: "Elixir", level: "Learning" }
-      ]
-    },
-    {
-      icon: Cloud,
-      title: "Cloud Native & DevOps",
-      description: "Building and deploying scalable cloud applications",
-      skills: [
-        { name: "Docker", level: "Advanced" },
-        { name: "Kubernetes", level: "Advanced" },
-        { name: "CI/CD", level: "Advanced" },
-        { name: "Microservices", level: "Advanced" },
-        { name: "Cloud Architecture", level: "Intermediate" }
-      ]
-    },
-    {
-      icon: TerminalIcon,
-      title: "Developer Experience",
-      description: "Tools and environments that make me productive",
-      skills: [
-        { name: "Neovim", level: "Expert", isMain: true },
-        { name: "Git", level: "Advanced" },
-        { name: "Arch Linux", level: "Advanced" },
-        { name: "Tiling WM", level: "Advanced" },
-        { name: "Shell Scripting", level: "Intermediate" }
-      ]
-    },
-    {
-      icon: Server,
-      title: "Backend & APIs",
-      description: "Creating robust server-side applications and services",
-      skills: [
-        { name: "REST APIs", level: "Expert" },
-        { name: "Web Scraping", level: "Advanced" },
-        { name: "Concurrency", level: "Advanced" },
-        { name: "Database Design", level: "Intermediate" },
-        { name: "System Design", level: "Intermediate" }
-      ]
-    }
+      {
+        icon: Code2,
+        title: "Programming Languages",
+        description: "Core languages for building enterprise-grade applications",
+        skills: [
+          { name: "Go", level: "Expert", isMain: true },
+          { name: "React", level: "Intermediate" },
+          { name: "Ruby on Rails", level: "Intermediate" },
+          { name: "C#/.NET", level: "Intermediate" },
+          { name: "C", level: "Foundation" },
+          { name: "Elixir", level: "Learning" }
+        ]
+      },
+      {
+        icon: Cloud,
+        title: "Infrastructure & DevOps",
+        description: "Building and orchestrating distributed cloud systems",
+        skills: [
+          { name: "Docker", level: "Advanced" },
+          { name: "Kubernetes", level: "Advanced" },
+          { name: "CI/CD Pipelines", level: "Advanced" },
+          { name: "Microservices", level: "Advanced" },
+          { name: "Cloud Architecture", level: "Intermediate" }
+        ]
+      },
+      {
+        icon: TerminalIcon,
+        title: "Development Environment",
+        description: "Optimized toolchain and system configuration",
+        skills: [
+          { name: "Neovim", level: "Expert", isMain: true },
+          { name: "Git Workflows", level: "Advanced" },
+          { name: "Arch Linux", level: "Advanced" },
+          { name: "Tiling WM", level: "Advanced" },
+          { name: "Shell Scripting", level: "Intermediate" }
+        ]
+      },
+      {
+        icon: Server,
+        title: "Backend Systems",
+        description: "Server-side architecture and API development",
+        skills: [
+          { name: "REST APIs", level: "Expert" },
+          { name: "Concurrent Processing", level: "Advanced" },
+          { name: "Web Scraping", level: "Advanced" },
+          { name: "Database Design", level: "Intermediate" },
+          { name: "System Design", level: "Intermediate" }
+        ]
+      }
   ];
 
   const achievements = [
     { 
       icon: "🏆", 
-      title: "3 Hackathon Wins", 
-      description: "Including Inclusiv - job platform for disabled people" 
+      title: "3 Competition Victories", 
+      description: "Including Inclusiv - accessibility-focused employment platform" 
     },
     { 
       icon: "💼", 
-      title: "Internship Completed", 
-      description: "Hands-on experience in professional development" 
+      title: "Professional Internship", 
+      description: "Production environment experience in enterprise development" 
     },
     { 
       icon: "🌟", 
-      title: "Open Source Contributor", 
-      description: "Active in the Go and open source community" 
+      title: "Open Source Contributions", 
+      description: "Active contributor to Go ecosystem and community projects" 
     },
     { 
       icon: "🚀", 
-      title: "100+ Projects", 
-      description: "Built countless applications across different domains" 
+      title: "100+ Repositories", 
+      description: "Extensive portfolio across multiple technology domains" 
     }
   ];
 
@@ -95,11 +95,11 @@ const Skills = () => {
         {/* Header */}
         <div className="text-center mb-16 fade-up">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            My <span className="text-terminal">Arsenal</span>
+            Technical <span className="text-terminal">Core</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            3+ years of programming experience with a focus on Go and cloud-native technologies. 
-            Here's what I bring to the table.
+            3+ years of development experience specializing in Go and distributed systems architecture. 
+            Here's my technical foundation and operational expertise.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ const Skills = () => {
                       >
                         <Badge 
                           className={`${getLevelColor(skill.level)} ${
-                            skill.isMain ? 'pulse-glow' : ''
+                            skill.isMain ? 'animate-smooth-bounce' : ''
                           } font-mono`}
                         >
                           {skill.name}

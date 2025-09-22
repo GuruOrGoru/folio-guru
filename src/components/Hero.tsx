@@ -100,15 +100,15 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Quick Stats */}
+            {/* Metrics Grid */}
             <div className="grid grid-cols-2 gap-4 pt-6">
-              <div className="bg-card border border-terminal/50 rounded-lg p-4 text-center pulse-glow">
+              <div className="bg-card border border-terminal/50 rounded-lg p-4 text-center transform hover:scale-105 transition-all duration-300">
                 <div className="text-2xl font-bold text-terminal">100+</div>
-                <div className="text-sm text-muted-foreground font-mono">Projects Built</div>
+                <div className="text-sm text-muted-foreground font-mono">Repositories</div>
               </div>
-              <div className="bg-card border border-terminal/50 rounded-lg p-4 text-center">
+              <div className="bg-card border border-terminal/50 rounded-lg p-4 text-center transform hover:scale-105 transition-all duration-300">
                 <div className="text-2xl font-bold text-terminal">3</div>
-                <div className="text-sm text-muted-foreground font-mono">Hackathon Wins</div>
+                <div className="text-sm text-muted-foreground font-mono">Competition Victories</div>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 smooth-bounce">
         <div className="w-6 h-10 border-2 border-terminal rounded-full flex justify-center">
           <div className="w-1 h-3 bg-terminal rounded-full mt-2 animate-pulse"></div>
         </div>

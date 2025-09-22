@@ -8,59 +8,59 @@ const Projects = () => {
     {
       id: 1,
       title: "Inclusiv",
-      description: "A job platform designed specifically for disabled people, promoting inclusive employment opportunities. Built during a hackathon and won first place.",
-      tags: ["Go", "Web Platform", "Social Impact", "Hackathon Winner"],
+      description: "Accessibility-focused employment platform designed for inclusive workforce integration. Implemented comprehensive job matching algorithms and won first place in technical competition.",
+      tags: ["Go", "Accessibility", "Enterprise Platform", "Competition Winner"],
       icon: Trophy,
       status: "Live",
       link: "https://inclusiv.surge.sh",
-      highlight: "🏆 Hackathon Winner",
+      highlight: "🏆 Competition Victory",
       color: "border-terminal bg-terminal/5"
     },
     {
       id: 2,
-      title: "Adarsha School Website",
-      description: "Complete educational website for Adarsha School with modern design and functionality for students, parents, and staff.",
-      tags: ["Go", "Education", "Web Development"],
+      title: "Educational Institution Portal",
+      description: "Complete institutional management system for Adarsha School with modern architecture and comprehensive functionality for stakeholders.",
+      tags: ["Go", "Educational Technology", "Full-Stack Development"],
       icon: Globe,
       status: "Live",
       link: "https://adarshaschool.edu.np",
-      highlight: "🎓 Educational Impact"
+      highlight: "🎓 Institutional Impact"
     },
     {
       id: 3,
-      title: "Grt - URL Shortener",
-      description: "A fast and efficient URL shortening service built with Go. Clean, minimal interface with powerful backend performance.",
-      tags: ["Go", "Web Service", "API"],
+      title: "Grt - URL Shortening Service",
+      description: "High-performance URL shortening microservice built with Go. Implements clean architecture patterns with optimized backend performance.",
+      tags: ["Go", "Microservice", "RESTful API"],
       icon: TerminalIcon,
       status: "Completed",
       github: "https://github.com/guruorgoru",
-      highlight: "⚡ High Performance"
+      highlight: "⚡ Optimized Performance"
     },
     {
       id: 4,
       title: "ScrapeGuru",
-      description: "Concurrent web scraper built with Go's goroutines for high-performance data extraction. Handles multiple sites simultaneously.",
-      tags: ["Go", "Concurrency", "Data Processing"],
+      description: "Distributed web scraping system leveraging Go's goroutine concurrency model for parallel data extraction. Handles multiple target sites simultaneously.",
+      tags: ["Go", "Distributed Systems", "Data Processing"],
       icon: Wrench,
       status: "Completed",
       github: "https://github.com/guruorgoru",
-      highlight: "🚀 Concurrent Processing"
+      highlight: "🚀 Parallel Processing"
     }
   ];
 
   const currentProjects = [
     {
-      title: "TUI Music Player",
-      description: "Terminal-based personal music player with a beautiful interface. Perfect for command-line enthusiasts.",
-      tags: ["Go", "TUI", "Music"],
+      title: "TUI Audio Player",
+      description: "Terminal-based multimedia player with advanced interface design. Optimized for command-line workflow integration.",
+      tags: ["Go", "Terminal UI", "Audio Processing"],
       icon: Music,
       status: "In Development",
       progress: 70
     },
     {
-      title: "Secure Password Manager",
-      description: "Privacy-focused password manager with end-to-end encryption. Built for security-conscious users.",
-      tags: ["Go", "Security", "Encryption"],
+      title: "Cryptographic Password Manager",
+      description: "Privacy-focused credential management system with end-to-end encryption. Designed for security-conscious professionals.",
+      tags: ["Go", "Cryptography", "Security"],
       icon: Lock,
       status: "In Development",
       progress: 45
@@ -68,10 +68,10 @@ const Projects = () => {
   ];
 
   const projectTypes = [
-    { type: "REST APIs", count: "20+", description: "Various backend services" },
-    { type: "Social Media Clones", count: "5+", description: "Using Ruby on Rails" },
-    { type: "Unity Games", count: "3+", description: "Built with C#" },
-    { type: "CRUD Applications", count: "15+", description: "Full-stack solutions" }
+    { type: "RESTful APIs", count: "20+", description: "Distributed backend services" },
+    { type: "Social Platforms", count: "5+", description: "Using Ruby on Rails framework" },
+    { type: "Game Engines", count: "3+", description: "Built with C# and Unity" },
+    { type: "CRUD Systems", count: "15+", description: "Full-stack enterprise solutions" }
   ];
 
   return (
@@ -80,11 +80,11 @@ const Projects = () => {
         {/* Header */}
         <div className="text-center mb-16 fade-up">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Featured <span className="text-terminal">Projects</span>
+            Production <span className="text-terminal">Systems</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From hackathon winners to production applications, here are some projects I'm proud of. 
-            Most of my 100+ projects were lost during OS changes, but these represent my best work.
+            From competition-winning solutions to enterprise applications, these represent my technical capabilities. 
+            Most of my 100+ repositories were lost during system migrations, but these showcase my engineering expertise.
           </p>
         </div>
 
@@ -167,7 +167,7 @@ const Projects = () => {
         {/* Current Projects */}
         <div className="mb-16 fade-up">
           <h3 className="text-2xl font-bold mb-8 text-center">
-            <span className="text-terminal">Currently</span> Working On
+            Development <span className="text-terminal">In Progress</span>
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {currentProjects.map((project, index) => {
@@ -222,7 +222,7 @@ const Projects = () => {
         {/* Project Types Overview */}
         <div className="fade-up">
           <h3 className="text-2xl font-bold mb-8 text-center">
-            Project <span className="text-terminal">Categories</span>
+            Technical <span className="text-terminal">Domains</span>
           </h3>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {projectTypes.map((type, index) => (
@@ -242,17 +242,17 @@ const Projects = () => {
           <Card className="bg-terminal/5 border-terminal/30 inline-block">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold mb-4">
-                Want to see more projects?
+                Explore additional repositories?
               </h3>
               <p className="text-muted-foreground mb-6">
-                Check out my GitHub for more repositories and contributions to open source projects.
+                Browse my GitHub for additional repositories and open source contributions.
               </p>
               <Button 
                 className="bg-terminal hover:bg-terminal-dim text-primary-foreground"
                 onClick={() => window.open("https://github.com/guruorgoru", "_blank")}
               >
                 <Github className="w-4 h-4 mr-2" />
-                Visit GitHub Profile
+                Explore GitHub Portfolio
               </Button>
             </CardContent>
           </Card>
