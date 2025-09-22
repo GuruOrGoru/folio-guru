@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://guruorgoru.netlify.app
+**URL**: https://guruorgoru.surge.sh
 
 ## How can I edit this code?
 
@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use github**
 
-Simply visit the [Github Project](https://guruorgoru/guruorgoru-dot-dev) and start prompting.
+Simply visit the [Github Project](https://guruorgoru/folio-guru) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
